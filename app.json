@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小顽童",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#626262",
+    "selectedColor": "#28a1fd",
+    "list": [
+      {
+        "iconPath": "./images/tab_1.png",
+        "selectedIconPath": "./images/tab_1_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "./images/tab_2.png",
+        "selectedIconPath": "./images/tab_2_active.png",
+        "pagePath": "pages/test/test",
+        "text": "消息"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于....."
+    }
+  },
+  "usingComponents": {
+    "l-tabs": "/linui/tabs/index",
+    "l-tabpanel": "/linui/tabpanel/index",
+    "l-notice-bar":"/linui/notice-bar/index"
+  }
+}
