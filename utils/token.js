@@ -1,9 +1,10 @@
 import {Config} from 'config.js';
+import route from 'route.js';
 class Token
 {
   constructor()
   {
-    this.tokenUrl = Config.restUrl + 'authorizations/weapp';
+    this.tokenUrl = Config.restUrl + route.user.storeToken;
   }
   // 判断是否有token,若无则向服务端获取token
   verify()

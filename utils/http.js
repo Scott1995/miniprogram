@@ -5,6 +5,7 @@ class Http {
   constructor() {
     "use strict";
     this.baseRestUrl = Config.restUrl;
+    this.accept = Config.accept;
   }
   request(params,noRefetch) {
     var self = this,
@@ -18,6 +19,7 @@ class Http {
       method: params.type,
       header: {
         'Authorization': wx.getStorageSync('token'),
+        'Accept': this.accept,
       },
       success(res) {
         var code = res.statusCode.toString();
