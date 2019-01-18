@@ -2,13 +2,11 @@ import { Http } from 'http.js';
 const http = new Http()
 const TEST_URL = 'videoList'; /* 测试地址 */
 
-export function _test(cb){
+export function _test(data,cb){
   var params = {
     type:'get',
     url: TEST_URL,
-    data:{
-      a:1
-    },
+    data:data,
     sCallback(res){
       cb && cb(res)
     }

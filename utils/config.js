@@ -6,6 +6,6 @@ class Config
   }
 }
 
-Config.restUrl = 'http://offical.scott1995.top/api/';
+Config.restUrl = 'http://xwt.test/api/';
 
 export {Config};
