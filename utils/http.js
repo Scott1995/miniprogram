@@ -29,23 +29,6 @@ class Http {
             if (!noRefetch) {
               self._refetch(params);
             }
-          } else if (code == '405') {
-            wx.redirectTo({
-              url: '/pages/start/start',
-            })
-          } else if (code == '500') {
-            wx.showToast({
-              title: res.data.message,
-              icon: 'none',
-              duration: 2500
-            })
-          } else {
-            wx.showToast({
-              title: res.data.message,
-              icon: 'none',
-              duration: 2500
-            })
-            return
           }
           self._processError(res);
           params.eCallback && params.eCallback(res.data);
