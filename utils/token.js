@@ -3,7 +3,7 @@ class Token
 {
   constructor()
   {
-    this.tokenUrl = Config.restUrl + 'api/authorizations/weapp';
+    this.tokenUrl = Config.restUrl + 'authorizations/weapp';
   }
   // 判断是否有token,若无则向服务端获取token
   verify()
