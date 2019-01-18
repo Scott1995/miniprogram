@@ -1,10 +1,9 @@
-import {Config} from 'config.js';
 import route from 'route.js';
 class Token
 {
   constructor()
   {
-    this.tokenUrl = Config.restUrl + route.user.storeToken;
+    this.tokenUrl = ''
   }
   // 判断是否有token,若无则向服务端获取token
   verify()

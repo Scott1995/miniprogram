@@ -1,11 +1,8 @@
 {
 	"description": "项目配置文件",
+	"miniprogramRoot": "src/",
 	"packOptions": {
-		"ignore": [
-			"config/dev.env.js",
-			".git/",
-			".idea/"
-		]
+		"ignore": []
 	},
 	"setting": {
 		"urlCheck": false,
@@ -23,6 +20,11 @@
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
+	"scripts": {
+		"beforeCompile": "node switch --dev",
+		"beforePreview": "",
+		"beforeUpload": "node switch --prod"
+	},
 	"condition": {
 		"search": {
 			"current": -1,

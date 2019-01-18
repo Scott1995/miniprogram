@@ -1,0 +1,18 @@
+{
+  "name": "xwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "switch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "switch:dev": "node switch.js --dev",
+    "switch:prod": "node switch.js --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://root@118.31.9.49:22/home/gitspace/tzccapp/child-mini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

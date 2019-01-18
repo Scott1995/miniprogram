@@ -1,11 +1,10 @@
 import { Token } from 'token.js';
-import { Config } from 'config.js';
+import config from '../config.js'
 
 class Http {
   constructor() {
     "use strict";
-    this.baseRestUrl = Config.restUrl;
-    this.accept = Config.accept;
+    this.baseRestUrl = config.baseUrl;
   }
   request(params,noRefetch) {
     var self = this,

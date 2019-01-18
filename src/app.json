@@ -15,14 +15,14 @@
     "selectedColor": "#28a1fd",
     "list": [
       {
-        "iconPath": "./images/tab_1.png",
-        "selectedIconPath": "./images/tab_1_active.png",
+        "iconPath": "./static/images/tab_1.png",
+        "selectedIconPath": "./static/images/tab_1_active.png",
         "pagePath": "pages/index/index",
         "text": "首页"
       },
       {
-        "iconPath": "./images/tab_2.png",
-        "selectedIconPath": "./images/tab_2_active.png",
+        "iconPath": "./static/images/tab_2.png",
+        "selectedIconPath": "./static/images/tab_2_active.png",
         "pagePath": "pages/test/test",
         "text": "消息"
       }
@@ -34,8 +34,5 @@
     }
   },
   "usingComponents": {
-    "l-tabs": "/linui/tabs/index",
-    "l-tabpanel": "/linui/tabpanel/index",
-    "l-notice-bar":"/linui/notice-bar/index"
   }
 }

@@ -1,3 +1,5 @@
+import route from '../utils/route.js';
+
 export default function (options = {}) {
   return Page({
     // 页面进入
