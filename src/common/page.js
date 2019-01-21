@@ -9,7 +9,7 @@ export default function (options = {}) {
     // 转发
     onShareAppMessage() {
       return {
-        title: this.data.title ? this.data.title : '小顽童'
+        title: this.data.title || '小顽童'
       };
     },
     // 下拉刷新

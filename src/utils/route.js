@@ -4,5 +4,8 @@ module.exports = {
     store: 'user/store1',
     storeToken: 'authorizations/weapp'
   },
+  index:{
+    getBanner: 'getBanner'
+  },
   test: 'videoList'
 }

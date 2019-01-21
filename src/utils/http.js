@@ -17,8 +17,7 @@ class Http {
       data: params.data,
       method: params.type,
       header: {
-        'Authorization': wx.getStorageSync('token'),
-        'Accept': this.accept,
+        'Authorization': wx.getStorageSync('token')
       },
       success(res) {
         var code = res.statusCode.toString();
