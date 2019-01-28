@@ -34,5 +34,7 @@
     }
   },
   "usingComponents": {
+      "l-tabs": "./static/linui/tabs/index",
+      "l-tabpanel": "./static/linui/tabpanel/index"
   }
 }

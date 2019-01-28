@@ -1,3 +1,4 @@
 module.exports = {
-  "baseUrl": "http://xwt.test/api/"
+  "baseUrl": "http://xwt.test/api/",
+  "debugger": true
 }

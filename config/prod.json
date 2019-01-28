@@ -1,3 +1,4 @@
 {
-  "baseUrl": "prod server",
+  "baseUrl": "prod server", 
+  "debugger":false
 }

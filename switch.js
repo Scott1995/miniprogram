@@ -33,7 +33,6 @@ const merge = (prodEnv, devEnv) => {
 fs.access(devFile, fs.constants.W_OK, (err) => {
     const prod = fs.readFileSync(prodFile, 'utf-8')
     let prodEnv = JSON.parse(prod)
-    // console.log(!err && isDev)
     if (!err && isDev) {
         const dev = fs.readFileSync(devFile, 'utf-8');
         const devEnv = JSON.parse(dev)
@@ -42,4 +41,4 @@ fs.access(devFile, fs.constants.W_OK, (err) => {
     const result = 'module.exports = ' + JSON.stringify(prodEnv, null, 2)
     fs.writeFileSync(configFile, result, 'utf8')
     console.log('写入成功！')
-});
+})

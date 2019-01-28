@@ -1,4 +1,5 @@
 import route from '../utils/route.js';
+import config from '../config.js';
 
 export default function (options = {}) {
   return Page({
@@ -9,7 +10,7 @@ export default function (options = {}) {
     // 转发
     onShareAppMessage() {
       return {
-        title: this.data.title || '小顽童'
+        title: this.data.title || '小顽童亲子'
       };
     },
     // 下拉刷新
@@ -23,6 +24,9 @@ export default function (options = {}) {
         title: '加载中',
       })
       cb && cb()
+    },
+    log(...arg) {
+      config.debugger && console.log(...arg)
     },
     ...options
   });

@@ -32,6 +32,7 @@ class Http {
           }
           self._processError(res);
           params.eCallback && params.eCallback(res.data);
+          wx.hideLoading()
         }
       },
       fail: function (err) {

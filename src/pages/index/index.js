@@ -6,9 +6,7 @@ Page({
     title:'还是很受伤啊啊', // 转发标题
   },
   test(){
-    _test({
-      a:1
-    },res => {
+    _test({a:1},res => {
       this.setData({
         a:1
       },() => {

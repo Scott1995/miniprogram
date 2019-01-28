@@ -1,10 +1,19 @@
 // components/tabs/index.js
 Component({
-  externalClasses: ['l-class-header', 'l-class-active', 'l-class-inactive','l-class-line','l-class-tabimage'],
+  externalClasses: ['l-class-header', 'l-class-active', 'l-class-content', 'l-class-inactive', 'l-class-line', 'l-class-tabimage', 'l-class-header-line'],
   relations: {
     '../tabpanel/index': {
       type: 'child',
-    }
+      linked(target) {
+        console.log(target)
+        // 每次有子节点被插入时执行，target是该节点实例对象，触发在该节点attached生命周期之后
+        this.initTabs();
+      },
+      unlinked(target) {
+        this.initTabs();
+      }
+    },
+
   },
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -22,24 +31,24 @@ Component({
       type: String,
       value: 'top',
     },
-    picPlacement:{
+    picPlacement: {
       type: String,
       value: 'left',
     },
     aminmated: Boolean,
     swipeable: Boolean,
     scrollable: Boolean,
-    hasLine:{
-      type:Boolean,
-      value:true
+    hasLine: {
+      type: Boolean,
+      value: true
     },
-    activeColor:{
-      type:String,
-      value:'#333333'
+    activeColor: {
+      type: String,
+      value: '#333333'
     },
-    inactiveColor:{
-      type:String,
-      value:'#bbbbbb'
+    inactiveColor: {
+      type: String,
+      value: '#bbbbbb'
     },
 
   },
@@ -72,10 +81,10 @@ Component({
           return {
             tab: item.data.tab,
             key: item.data.key,
-            icon:item.data.icon,
-            iconStyle:item.data.iconStyle,
-            image:item.data.image,
-            picPlacement:item.data.picPlacement,
+            icon: item.data.icon,
+            iconStyle: item.data.iconStyle,
+            image: item.data.image,
+            picPlacement: item.data.picPlacement,
           }
         });
         this.setData({
