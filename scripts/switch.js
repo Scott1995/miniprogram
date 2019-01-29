@@ -1,13 +1,13 @@
 
 const fs = require('fs')
 const sourceFiles = {
-  prefix: 'config',
+  prefix: '../config',
   dev: 'dev.json',
   prod: 'prod.json'
 }
 //目标文件
 const targetFiles = {
-  prefix: 'src',
+  prefix: '../src',
   filename: 'config.js'
 }
 

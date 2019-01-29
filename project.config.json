@@ -23,9 +23,9 @@
 	},
 	"isGameTourist": false,
 	"scripts": {
-		"beforeCompile": "node switch --dev",
+		"beforeCompile": "node ./scripts/switch --dev",
 		"beforePreview": "",
-		"beforeUpload": "node switch --prod"
+		"beforeUpload": "node  ./scripts/switch --prod"
 	},
 	"condition": {
 		"search": {

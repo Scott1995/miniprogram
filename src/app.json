@@ -1,13 +1,13 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/test/test"
   ],
-  "window":{
-    "backgroundTextStyle":"dark",
+  "window": {
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "小顽童",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "backgroundColor": "#ffffff",
@@ -34,7 +34,7 @@
     }
   },
   "usingComponents": {
-      "l-tabs": "./static/linui/tabs/index",
-      "l-tabpanel": "./static/linui/tabpanel/index"
+    "l-tabs": "./static/linui/tabs/index",
+    "l-tabpanel": "./static/linui/tabpanel/index"
   }
 }
