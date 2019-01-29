@@ -5,8 +5,9 @@
   "main": "switch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "switch:dev": "node switch.js --dev",
-    "switch:prod": "node switch.js --prod"
+    "switch:dev": "node ./scripts/switch.js --dev",
+    "switch:prod": "node ./scripts/switch.js --prod",
+    "new:page":"node ./scripts/generatePage.js"
   },
   "repository": {
     "type": "git",
